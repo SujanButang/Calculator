@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class = "container">
+            <div class="display">
+                <input type="text" readonly name="screen" id="display">
+            </div>
+            <div class = "buttons">
+                <table>
+                    <tr>
+                        <td><button class="button" id="clear" onclick="buttonPressed('c')">C</button></td>
+                        <td><button class="button" id="divide" onclick="buttonPressed('/')">/</button></td>
+                        <td><button class="button" id="multiply" onclick="buttonPressed('x')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" id="seven" onclick="buttonPressed(7)">7</button></td>
+                        <td><button class="button" id="eight" onclick="buttonPressed(8)">8</button></td>
+                        <td><button class="button" id="nine" onclick="buttonPressed(9)">9</button></td>
+                        <td><button class="button" id="subtract" onclick="buttonPressed('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" id="four" onclick="buttonPressed(4)">4</button></td>
+                        <td><button class="button" id="five" onclick="buttonPressed(5)">5</button></td>
+                        <td><button class="button" id="six" onclick="buttonPressed(6)">6</button></td>
+                        <td><button class="button" id="add" onclick="buttonPressed('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" id="one" onclick="buttonPressed(1)">1</button></td>
+                        <td><button class="button" id="two" onclick="buttonPressed(2)">2</button></td>
+                        <td><button class="button" id="three" onclick="buttonPressed(3)">3</button></td>
+                        <td><button class="button" id="equals" onclick="buttonPressed('equals')">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" id="zero" onclick="buttonPressed(0)">0</button></td>
+                        <td><button class="button" id="doubleZero" onclick="buttonPressed('00')">00</button></td>
+                        <td><button class="button" id="decimal" onclick="buttonPressed('.')">.</button></td>
+                        <td><button class="button" id="backspace" onclick="buttonPressed('back')">⌫</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
